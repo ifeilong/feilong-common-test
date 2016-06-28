@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.feilong.core.bean.command;
+package com.feilong.store.order;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

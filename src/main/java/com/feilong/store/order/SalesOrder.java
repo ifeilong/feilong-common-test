@@ -13,12 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.feilong.core.bean.command;
+package com.feilong.store.order;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
+
+import com.feilong.store.member.Member;
 
 /**
  * The Class SalesOrder.

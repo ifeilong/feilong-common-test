@@ -13,47 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.feilong.test;
+package com.feilong.store.item;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The Class MyBean.
- *
+ * 
  * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @version 1.0 Jan 26, 2013 2:43:19 PM
+ * @since 1.7.3
  */
-public class MyBean{
+public class Item{
 
-    /** The id. */
-    private Long         id;
+    private Long           id;
 
-    /** The data. */
-    private List<Object> data = new ArrayList<Object>();
+    private String         name;
 
-    /**
-     * 获得 data.
-     *
-     * @return the data
-     */
-    public List<Object> getData(){
-        return data;
-    }
+    private List<Property> propertyList;
 
     /**
-     * 设置 data.
-     *
-     * @param data
-     *            the data to set
-     */
-    public void setData(List<Object> data){
-        this.data = data;
-    }
-
-    /**
-     * 获得 id.
-     *
      * @return the id
      */
     public Long getId(){
@@ -61,13 +38,41 @@ public class MyBean{
     }
 
     /**
-     * 设置 id.
-     *
      * @param id
      *            the id to set
      */
     public void setId(Long id){
         this.id = id;
+    }
+
+    /**
+     * @return the name
+     */
+    public String getName(){
+        return name;
+    }
+
+    /**
+     * @param name
+     *            the name to set
+     */
+    public void setName(String name){
+        this.name = name;
+    }
+
+    /**
+     * @return the propertyList
+     */
+    public List<Property> getPropertyList(){
+        return propertyList;
+    }
+
+    /**
+     * @param propertyList
+     *            the propertyList to set
+     */
+    public void setPropertyList(List<Property> propertyList){
+        this.propertyList = propertyList;
     }
 
 }

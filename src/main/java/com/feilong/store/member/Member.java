@@ -13,38 +13,38 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.feilong.core.bean.command;
+package com.feilong.store.member;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
-import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
- * The Class SalesOrderDto.
+ * The Class Member.
  * 
  * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @version 1.0.7 2014年6月24日 上午11:28:42
+ * @version 1.0.7 2014年6月24日 下午1:22:39
  * @since 1.0.7
  */
-public class SalesOrderDto implements Serializable{
+public class Member implements Serializable{
 
     /** The Constant serialVersionUID. */
-    private static final long serialVersionUID = 288232184048495608L;
+    private static final long   serialVersionUID = 288232184048495608L;
 
     /** The id. */
-    private Long              id;
+    private Long                id;
 
     /** The code. */
-    private String            code;
+    private String              code;
 
-    /** The price. */
-    private BigDecimal        price;
+    /** The login name. */
+    private String              loginName;
 
-    /** The create time. */
-    private Date              createTime;
+    /** The member addresses. */
+    private MemberAddress[]     memberAddresses;
 
-    /** The member. */
-    private Member            member;
+    /** The love map. */
+    private Map<String, String> loveMap          = new HashMap<String, String>();
 
     /**
      * Gets the id.
@@ -85,59 +85,60 @@ public class SalesOrderDto implements Serializable{
     }
 
     /**
-     * Gets the price.
+     * Gets the member addresses.
      * 
-     * @return the price
+     * @return the memberAddresses
      */
-    public BigDecimal getPrice(){
-        return price;
+    public MemberAddress[] getMemberAddresses(){
+        return memberAddresses;
     }
 
     /**
-     * Sets the price.
+     * Sets the member addresses.
      * 
-     * @param price
-     *            the price to set
+     * @param memberAddresses
+     *            the memberAddresses to set
      */
-    public void setPrice(BigDecimal price){
-        this.price = price;
+    public void setMemberAddresses(MemberAddress[] memberAddresses){
+        this.memberAddresses = memberAddresses;
     }
 
     /**
-     * Gets the creates the time.
+     * Gets the login name.
      * 
-     * @return the createTime
+     * @return the loginName
      */
-    public Date getCreateTime(){
-        return createTime;
+    public String getLoginName(){
+        return loginName;
     }
 
     /**
-     * Sets the creates the time.
+     * Sets the login name.
      * 
-     * @param createTime
-     *            the createTime to set
+     * @param loginName
+     *            the loginName to set
      */
-    public void setCreateTime(Date createTime){
-        this.createTime = createTime;
+    public void setLoginName(String loginName){
+        this.loginName = loginName;
     }
 
     /**
-     * Gets the member.
+     * Gets the love map.
      * 
-     * @return the member
+     * @return the loveMap
      */
-    public Member getMember(){
-        return member;
+    public Map<String, String> getLoveMap(){
+        return loveMap;
     }
 
     /**
-     * Sets the member.
+     * 设置 love map.
      * 
-     * @param member
-     *            the member to set
+     * @param loveMap
+     *            the loveMap to set
      */
-    public void setMember(Member member){
-        this.member = member;
+    public void setLoveMap(Map<String, String> loveMap){
+        this.loveMap = loveMap;
     }
+
 }

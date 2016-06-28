@@ -59,7 +59,7 @@ public class User implements Comparable<User>{
     private Map<String, String> attrMap;
 
     /** 昵称. */
-    private String[]            nickName;
+    private String[]            nickNames;
 
     /** The user info. */
     private UserInfo            userInfo         = new UserInfo();
@@ -240,25 +240,6 @@ public class User implements Comparable<User>{
     }
 
     /**
-     * 获得 昵称.
-     * 
-     * @return the nickName
-     */
-    public String[] getNickName(){
-        return nickName;
-    }
-
-    /**
-     * 设置 昵称.
-     * 
-     * @param nickName
-     *            the nickName to set
-     */
-    public void setNickName(String[] nickName){
-        this.nickName = nickName;
-    }
-
-    /**
      * Gets the user addresses.
      * 
      * @return the userAddresses
@@ -396,5 +377,20 @@ public class User implements Comparable<User>{
      */
     public void setPassword(String password){
         this.password = password;
+    }
+
+    /**
+     * @return the nickNames
+     */
+    public String[] getNickNames(){
+        return nickNames;
+    }
+
+    /**
+     * @param nickNames
+     *            the nickNames to set
+     */
+    public void setNickNames(String[] nickNames){
+        this.nickNames = nickNames;
     }
 }

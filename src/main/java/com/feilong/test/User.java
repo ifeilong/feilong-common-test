@@ -303,10 +303,6 @@ public class User implements Comparable<User>{
      */
     @Override
     public String toString(){
-
-        //		return "User [name=" + name + ", id=" + id + ", loves=" + Arrays.toString(loves) + ", date=" + date + ", money=" + money
-        //				+ ", attrMap=" + attrMap + ", nickName=" + Arrays.toString(nickName) + ", userInfo=" + userInfo + ", userAddresses="
-        //				+ Arrays.toString(userAddresses) + ", userAddresseList=" + userAddresseList + "]";
         return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
     }
 
@@ -327,8 +323,7 @@ public class User implements Comparable<User>{
      */
     @Override
     public boolean equals(Object obj){
-        boolean reflectionEquals = EqualsBuilder.reflectionEquals(this, obj, "id");
-        return reflectionEquals;
+        return EqualsBuilder.reflectionEquals(this, obj, "id");
     }
 
     /**

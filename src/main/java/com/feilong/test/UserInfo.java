@@ -27,6 +27,21 @@ public class UserInfo{
     private Integer age;
 
     /**
+     * 
+     */
+    public UserInfo(){
+        super();
+    }
+
+    /**
+     * @param age
+     */
+    public UserInfo(Integer age){
+        super();
+        this.age = age;
+    }
+
+    /**
      * 获得 age.
      *
      * @return the age

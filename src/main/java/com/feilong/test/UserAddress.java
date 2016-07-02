@@ -26,6 +26,15 @@ public class UserAddress{
     /** The address. */
     private String address;
 
+    public UserAddress(){
+        super();
+    }
+
+    public UserAddress(String address){
+        super();
+        this.address = address;
+    }
+
     /**
      * 获得 address.
      *

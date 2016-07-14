@@ -2,10 +2,17 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.feilong.test</groupId>
 	<artifactId>feilong-common-test</artifactId>
-	<version>1.8.0</version>
+	<version>1.8.1-SNAPSHOT</version>
 
 	<name>feilong-common-test</name>
 	<description>feilong-common-test(将来会删除)</description>
+
+	<!-- 软件配置管理SCM (Software Configuration Management), 如cvs ,svn ,git -->
+	<scm>
+		<url>https://github.com/venusdrogon/feilong-platform.git</url>
+		<connection>scm:git:git@github.com:venusdrogon/feilong-platform.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:venusdrogon/feilong-platform.git</developerConnection>
+	</scm>
 
 	<properties>
 		<!-- 让整个项目统一字符集编码 -->

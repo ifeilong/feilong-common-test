@@ -49,16 +49,16 @@ public class Address implements Serializable{
     /**
      * Instantiates a new address.
      * 
+     * @param country
+     *            the country
+     * @param city
+     *            the city
      * @param zipCode
      *            the zip code
      * @param addr
      *            the addr
-     * @param city
-     *            the city
-     * @param country
-     *            the country
      */
-    public Address(String zipCode, String addr, String city, String country){
+    public Address(String country, String city, String zipCode, String addr){
         this.zipCode = zipCode;
         this.addr = addr;
         this.city = city;

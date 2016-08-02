@@ -48,7 +48,7 @@ public class Address implements Serializable{
 
     /**
      * Instantiates a new address.
-     * 
+     *
      * @param country
      *            the country
      * @param city

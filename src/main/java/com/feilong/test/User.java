@@ -303,7 +303,9 @@ public class User implements Comparable<User>{
      */
     @Override
     public String toString(){
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
+        //不要使用 MULTI_LINE_STYLE
+        //see https://github.com/venusdrogon/feilong-core/issues/204
+        return ToStringBuilder.reflectionToString(this, ToStringStyle.DEFAULT_STYLE);
     }
 
     /*

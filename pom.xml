@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.feilong.test</groupId>
 	<artifactId>feilong-common-test</artifactId>
-	<version>1.9.0</version>
+	<version>1.9.1-SNAPSHOT</version>
 
 	<name>feilong-common-test</name>
 	<description>feilong-common-test(将来会删除)</description>

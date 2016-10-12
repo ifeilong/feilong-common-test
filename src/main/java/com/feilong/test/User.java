@@ -68,7 +68,7 @@ public class User implements Comparable<User>{
     private UserAddress[]       userAddresses;
 
     /** The user addresse list. */
-    private List<UserAddress>   userAddresseList = new ArrayList<UserAddress>();
+    private List<UserAddress>   userAddresseList = new ArrayList<>();
 
     /**
      * Instantiates a new user.

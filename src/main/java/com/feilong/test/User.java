@@ -71,6 +71,13 @@ public class User implements Comparable<User>{
     private List<UserAddress>   userAddresseList = new ArrayList<UserAddress>();
 
     /**
+     * Instantiates a new user.
+     */
+    public User(){
+        super();
+    }
+
+    /**
      * The Constructor.
      *
      * @param name
@@ -105,13 +112,6 @@ public class User implements Comparable<User>{
     public User(Long id, Integer age){
         this.id = id;
         this.age = age;
-    }
-
-    /**
-     * Instantiates a new user.
-     */
-    public User(){
-        super();
     }
 
     /**

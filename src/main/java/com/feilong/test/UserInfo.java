@@ -26,9 +26,6 @@ public class UserInfo{
     /** The age. */
     private Integer age;
 
-    /**
-     * 
-     */
     public UserInfo(){
         super();
     }

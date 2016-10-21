@@ -18,7 +18,7 @@
 		<!-- 让整个项目统一字符集编码 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<version.commons-lang3>3.4</version.commons-lang3>
+		<version.commons-lang3>3.5</version.commons-lang3>
 
 		<v.maven-compiler-plugin>3.5.1</v.maven-compiler-plugin>
 		<v.maven-surefire-plugin>2.19.1</v.maven-surefire-plugin>

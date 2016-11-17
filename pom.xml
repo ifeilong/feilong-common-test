@@ -20,7 +20,7 @@
 
 		<version.commons-lang3>3.5</version.commons-lang3>
 
-		<v.maven-compiler-plugin>3.5.1</v.maven-compiler-plugin>
+		<v.maven-compiler-plugin>3.6.0</v.maven-compiler-plugin>
 		<v.maven-surefire-plugin>2.19.1</v.maven-surefire-plugin>
 
 		<maven-compiler-plugin.source>1.7</maven-compiler-plugin.source>

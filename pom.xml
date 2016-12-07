@@ -26,7 +26,31 @@
 		<maven-compiler-plugin.source>1.7</maven-compiler-plugin.source>
 		<maven-compiler-plugin.target>1.7</maven-compiler-plugin.target>
 		<maven-compiler-plugin.encoding>${project.build.sourceEncoding}</maven-compiler-plugin.encoding>
+
+		<v.site-maven-plugin>0.12</v.site-maven-plugin>
+
+		<!-- **********************begin site-maven-plugin config******************************************* -->
+		<site-maven-plugin.repositoryName>feilong-platform</site-maven-plugin.repositoryName>
+		<site-maven-plugin.repositoryOwner>venusdrogon</site-maven-plugin.repositoryOwner>
+		<site-maven-plugin.branch>refs/heads/repository</site-maven-plugin.branch>
+		<!-- git commit message -->
+		<site-maven-plugin.message>deploy ${project.name} ${project.version}</site-maven-plugin.message>
+
+		<!-- github server corresponds to entry in ~/.m2/settings.xml -->
+		<github.global.server>github</github.global.server>
+		<!-- **********************end site-maven-plugin config******************************************* -->
 	</properties>
+
+
+	<!-- 项目发布管理 -->
+	<distributionManagement>
+		<!-- <url>file://${user.home}/feilong/repository</url> -->
+		<repository>
+			<id>internal.repo</id>
+			<name>Temporary Staging Repository</name>
+			<url>file://${project.build.directory}/mvn-repo</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencies>
 		<!-- commons-lang3 -->
@@ -66,6 +90,43 @@
 					<!-- 跳过测试 -->
 					<skip>true</skip>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>site-maven-plugin</artifactId>
+				<version>${v.site-maven-plugin}</version>
+				<configuration>
+					<!-- git commit message -->
+					<message>${site-maven-plugin.message}</message>
+					<!-- disable webpage processing -->
+					<noJekyll>true</noJekyll>
+
+					<merge>true</merge>
+
+					<!-- remote branch name -->
+					<branch>${site-maven-plugin.branch}</branch>
+
+					<!-- github repo name -->
+					<repositoryName>${site-maven-plugin.repositoryName}</repositoryName>
+					<!-- github username -->
+					<repositoryOwner>${site-maven-plugin.repositoryOwner}</repositoryOwner>
+
+					<!-- matches distribution management repository url above -->
+					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+					<includes>
+						<include>**/*</include>
+					</includes>
+				</configuration>
+				<executions>
+					<!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
+					<execution>
+						<goals>
+							<goal>site</goal>
+						</goals>
+						<phase>deploy</phase>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

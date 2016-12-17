@@ -13,59 +13,48 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.feilong.test;
-
-import java.util.Date;
+package com.feilong.store.member;
 
 /**
- * The Class Person.
+ * The Class UserInfo.
  *
  * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @version 1.0 Jan 26, 2013 2:42:00 PM
+ * @version 1.0 Jan 25, 2013 4:44:07 PM
  */
-public class Person{
+public class UserInfo{
 
-    /** The name. */
-    private String name;
+    /** The age. */
+    private Integer age;
 
-    /** The date attr. */
-    private Date   dateAttr;
-
-    /**
-     * 获得 name.
-     *
-     * @return the name
-     */
-    public String getName(){
-        return name;
+    public UserInfo(){
+        super();
     }
 
     /**
-     * 设置 name.
-     *
-     * @param name
-     *            the name to set
+     * @param age
      */
-    public void setName(String name){
-        this.name = name;
+    public UserInfo(Integer age){
+        super();
+        this.age = age;
     }
 
     /**
-     * 获得 date attr.
+     * 获得 age.
      *
-     * @return the dateAttr
+     * @return the age
      */
-    public Date getDateAttr(){
-        return dateAttr;
+    public Integer getAge(){
+        return age;
     }
 
     /**
-     * 设置 date attr.
+     * 设置 age.
      *
-     * @param dateAttr
-     *            the dateAttr to set
+     * @param age
+     *            the age to set
      */
-    public void setDateAttr(Date dateAttr){
-        this.dateAttr = dateAttr;
+    public void setAge(Integer age){
+        this.age = age;
     }
+
 }

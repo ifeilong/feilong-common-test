@@ -13,48 +13,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.feilong.test;
+package com.feilong.test.rule;
+
+import org.junit.rules.TestRule;
+import org.junit.runner.Description;
+import org.junit.runners.model.Statement;
 
 /**
- * The Class UserInfo.
+ * The Class RepeatRule.
  *
  * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @version 1.0 Jan 25, 2013 4:44:07 PM
  */
-public class UserInfo{
+public class RepeatRule implements TestRule{
 
-    /** The age. */
-    private Integer age;
-
-    public UserInfo(){
-        super();
-    }
-
-    /**
-     * @param age
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.junit.rules.TestRule#apply(org.junit.runners.model.Statement, org.junit.runner.Description)
      */
-    public UserInfo(Integer age){
-        super();
-        this.age = age;
+    @Override
+    public Statement apply(Statement statement,Description description){
+        Repeat repeat = description.getAnnotation(Repeat.class);
+        if (repeat != null){
+            return new RepeatStatement(statement, repeat.value());
+        }
+        return statement;
     }
-
-    /**
-     * 获得 age.
-     *
-     * @return the age
-     */
-    public Integer getAge(){
-        return age;
-    }
-
-    /**
-     * 设置 age.
-     *
-     * @param age
-     *            the age to set
-     */
-    public void setAge(Integer age){
-        this.age = age;
-    }
-
 }

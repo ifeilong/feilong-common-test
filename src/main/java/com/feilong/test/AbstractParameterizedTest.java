@@ -15,42 +15,16 @@
  */
 package com.feilong.test;
 
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
 /**
- * The Class UserAddress.
+ * The Class AbstractParameterizedTest.
  *
  * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @version 1.0 Jan 25, 2013 4:44:07 PM
+ * @since 1.8.3
  */
-public class UserAddress{
+@RunWith(Parameterized.class)
+public abstract class AbstractParameterizedTest{
 
-    /** The address. */
-    private String address;
-
-    public UserAddress(){
-        super();
-    }
-
-    public UserAddress(String address){
-        super();
-        this.address = address;
-    }
-
-    /**
-     * 获得 address.
-     *
-     * @return the address
-     */
-    public String getAddress(){
-        return address;
-    }
-
-    /**
-     * 设置 address.
-     *
-     * @param address
-     *            the address to set
-     */
-    public void setAddress(String address){
-        this.address = address;
-    }
 }

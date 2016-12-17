@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.feilong.test;
+package com.feilong.store.member;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

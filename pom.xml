@@ -1,11 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 	<groupId>com.feilong.test</groupId>
 	<artifactId>feilong-common-test</artifactId>
 	<version>1.10.0-SNAPSHOT</version>
 
 	<name>feilong-common-test</name>
-	<description>feilong-common-test(将来会删除)</description>
+	<description>feilong-common-test</description>
 
 	<!-- 软件配置管理SCM (Software Configuration Management), 如cvs ,svn ,git -->
 	<scm>
@@ -85,8 +86,6 @@
 					<source>${maven-compiler-plugin.source}</source>
 					<target>${maven-compiler-plugin.target}</target>
 					<encoding>${maven-compiler-plugin.encoding}</encoding>
-					<!-- <verbose>true</verbose> -->
-					<!-- <detail>true</detail> -->
 				</configuration>
 			</plugin>
 

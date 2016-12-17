@@ -19,6 +19,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<version.commons-lang3>3.5</version.commons-lang3>
+		<version.junit>4.12</version.junit>
 
 		<v.maven-compiler-plugin>3.6.0</v.maven-compiler-plugin>
 		<v.maven-surefire-plugin>2.19.1</v.maven-surefire-plugin>
@@ -58,6 +59,15 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>${version.commons-lang3}</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!--***************************** test************************** -->
+		<!-- junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${version.junit}</version>
 			<optional>true</optional>
 		</dependency>
 	</dependencies>

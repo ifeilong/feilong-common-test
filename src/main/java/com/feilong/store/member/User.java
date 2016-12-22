@@ -43,6 +43,9 @@ public class User implements Comparable<User>{
     /** 年龄. */
     private Integer             age;
 
+    /** 年龄int. */
+    private int                 ageInt;
+
     /** The password. */
     private String              password;
 
@@ -377,6 +380,8 @@ public class User implements Comparable<User>{
     }
 
     /**
+     * 获得 昵称.
+     *
      * @return the nickNames
      */
     public String[] getNickNames(){
@@ -384,10 +389,31 @@ public class User implements Comparable<User>{
     }
 
     /**
+     * 设置 昵称.
+     *
      * @param nickNames
      *            the nickNames to set
      */
     public void setNickNames(String[] nickNames){
         this.nickNames = nickNames;
+    }
+
+    /**
+     * 获得 年龄int.
+     *
+     * @return the ageInt
+     */
+    public int getAgeInt(){
+        return ageInt;
+    }
+
+    /**
+     * 设置 年龄int.
+     *
+     * @param ageInt
+     *            the ageInt to set
+     */
+    public void setAgeInt(int ageInt){
+        this.ageInt = ageInt;
     }
 }

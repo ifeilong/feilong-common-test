@@ -34,11 +34,11 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  */
 public class User implements Comparable<User>{
 
-    /** The name. */
-    private String              name             = "feilong";
-
     /** The id. */
     private Long                id               = 0L;
+
+    /** The name. */
+    private String              name             = "feilong";
 
     /** 年龄. */
     private Integer             age;
@@ -78,6 +78,16 @@ public class User implements Comparable<User>{
      */
     public User(){
         super();
+    }
+
+    /**
+     * @param id
+     * @param name
+     */
+    public User(Long id, String name){
+        super();
+        this.id = id;
+        this.name = name;
     }
 
     /**

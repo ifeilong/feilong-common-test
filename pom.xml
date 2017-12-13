@@ -19,7 +19,7 @@
 		<!-- 让整个项目统一字符集编码 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<version.commons-lang3>3.6</version.commons-lang3>
+		<version.commons-lang3>3.7</version.commons-lang3>
 		<version.junit>4.12</version.junit>
 
 		<v.maven-compiler-plugin>3.7.0</v.maven-compiler-plugin>

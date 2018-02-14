@@ -48,6 +48,8 @@ public class SalesOrderDto implements Serializable{
     /** The member. */
     private Member            member;
 
+    //---------------------------------------------------------------
+
     /**
      * Gets the id.
      * 

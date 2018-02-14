@@ -51,6 +51,8 @@ public class SalesOrder implements Serializable{
 
     private List<OrderLine>   orderLineList;
 
+    //---------------------------------------------------------------
+
     /**
      * Gets the id.
      * 

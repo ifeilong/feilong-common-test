@@ -46,6 +46,8 @@ public class Member implements Serializable{
     /** The love map. */
     private Map<String, String> loveMap          = new HashMap<>();
 
+    //---------------------------------------------------------------
+
     /**
      * Gets the id.
      * 

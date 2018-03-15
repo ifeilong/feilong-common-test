@@ -31,6 +31,31 @@ public class Person{
     /** The date attr. */
     private Date   dateAttr;
 
+    //---------------------------------------------------------------
+
+    /**
+     * Instantiates a new person.
+     */
+    public Person(){
+        super();
+    }
+
+    /**
+     * Instantiates a new person.
+     *
+     * @param name
+     *            the name
+     * @param dateAttr
+     *            the date attr
+     */
+    public Person(String name, Date dateAttr){
+        super();
+        this.name = name;
+        this.dateAttr = dateAttr;
+    }
+
+    //---------------------------------------------------------------
+
     /**
      * 获得 name.
      *

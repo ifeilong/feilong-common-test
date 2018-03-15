@@ -3,7 +3,7 @@
 	
 	<groupId>com.feilong.test</groupId>
 	<artifactId>feilong-common-test</artifactId>
-	<version>1.10.2</version>
+	<version>1.10.3</version>
 
 	<name>feilong-common-test</name>
 	<description>feilong-common-test</description>

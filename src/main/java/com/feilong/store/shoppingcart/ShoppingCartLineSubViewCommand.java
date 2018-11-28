@@ -30,10 +30,6 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  *
  * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
  * @version 5.3.1 2016年4月25日 上午11:13:26
- * @see com.baozun.nebula.sdk.command.shoppingcart.ShoppingCartLineCommand
- * @see com.baozun.nebula.model.shoppingcart.ShoppingCartLine
- * @see com.baozun.nebula.dao.shoppingcart.SdkShoppingCartLineDao
- * @see com.baozun.nebula.sdk.manager.shoppingcart.SdkShoppingCartManager#findShoppingCartLinesByMemberId(Long, Integer)
  * @since 5.3.1
  */
 public class ShoppingCartLineSubViewCommand implements Serializable{

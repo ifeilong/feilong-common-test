@@ -34,7 +34,7 @@ public class ShopSubViewCommand implements Serializable{
     private Long              id;
 
     /**
-     * 店铺的名称,see {@link com.baozun.nebula.model.auth.Organization#getName()}.
+     * 店铺的名称
      */
     private String            name;
 
@@ -96,7 +96,7 @@ public class ShopSubViewCommand implements Serializable{
     }
 
     /**
-     * 店铺的名称,see {@link com.baozun.nebula.model.auth.Organization#getName()}.
+     * 店铺的名称
      *
      * @return the name
      */
@@ -105,7 +105,7 @@ public class ShopSubViewCommand implements Serializable{
     }
 
     /**
-     * 店铺的名称,see {@link com.baozun.nebula.model.auth.Organization#getName()}.
+     * 店铺的名称
      *
      * @param name
      *            the name to set
@@ -115,7 +115,7 @@ public class ShopSubViewCommand implements Serializable{
     }
 
     /**
-     * 店铺的code,see {@link com.baozun.nebula.model.auth.Organization#getCode()},冗余,通常在购物车页面不会用这个值.
+     * 店铺的code,冗余,通常在购物车页面不会用这个值.
      * 
      * @return the code
      */
@@ -124,7 +124,7 @@ public class ShopSubViewCommand implements Serializable{
     }
 
     /**
-     * 店铺的code,see {@link com.baozun.nebula.model.auth.Organization#getCode()},冗余,通常在购物车页面不会用这个值.
+     * 店铺的code,,冗余,通常在购物车页面不会用这个值.
      *
      * @param code
      *            the code to set
@@ -134,7 +134,7 @@ public class ShopSubViewCommand implements Serializable{
     }
 
     /**
-     * 状态,see {@link com.baozun.nebula.model.auth.Organization#getLifecycle()}
+     * 状态
      *
      * @return the lifecycle
      */
@@ -143,7 +143,7 @@ public class ShopSubViewCommand implements Serializable{
     }
 
     /**
-     * 状态,see {@link com.baozun.nebula.model.auth.Organization#getLifecycle()}
+     * 状态
      *
      * @param lifecycle
      *            the lifecycle to set

@@ -3,7 +3,7 @@
 	
 	<groupId>com.feilong.test</groupId>
 	<artifactId>feilong-common-test</artifactId>
-	<version>1.10.3</version>
+	<version>1.10.4</version>
 
 	<name>feilong-common-test</name>
 	<description>feilong-common-test</description>
@@ -22,7 +22,7 @@
 		<version.commons-lang3>3.8.1</version.commons-lang3>
 		<version.junit>4.12</version.junit>
 
-		<v.maven-compiler-plugin>3.8.0</v.maven-compiler-plugin>
+		<v.maven-compiler-plugin>3.8.1</v.maven-compiler-plugin>
 		<v.maven-surefire-plugin>2.22.1</v.maven-surefire-plugin>
 
 		<maven-compiler-plugin.source>1.7</maven-compiler-plugin.source>

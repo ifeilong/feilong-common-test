@@ -47,6 +47,21 @@ public class Member implements Serializable{
     private Map<String, String> loveMap          = new HashMap<>();
 
     //---------------------------------------------------------------
+    /**
+     * 
+     */
+    public Member(){
+        super();
+    }
+
+    /**
+     * @param id
+     */
+    public Member(Long id){
+        super();
+        this.id = id;
+    }
+    //---------------------------------------------------------------
 
     /**
      * Gets the id.

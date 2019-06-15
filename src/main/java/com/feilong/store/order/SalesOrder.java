@@ -34,11 +34,18 @@ public class SalesOrder implements Serializable{
     /** The Constant serialVersionUID. */
     private static final long serialVersionUID = 288232184048495608L;
 
+    //---------------------------------------------------------------
+
     /** The id. */
     private Long              id;
 
     /** The code. */
     private String            code;
+
+    /** 物流状态. */
+    private Integer           logisticsStatus;
+
+    //---------------------------------------------------------------
 
     /** The price. */
     private BigDecimal        price;
@@ -49,6 +56,7 @@ public class SalesOrder implements Serializable{
     /** The member. */
     private Member            member;
 
+    /** The order line list. */
     private List<OrderLine>   orderLineList;
 
     //---------------------------------------------------------------
@@ -149,6 +157,8 @@ public class SalesOrder implements Serializable{
     }
 
     /**
+     * Gets the order line list.
+     *
      * @return the orderLineList
      */
     public List<OrderLine> getOrderLineList(){
@@ -156,11 +166,32 @@ public class SalesOrder implements Serializable{
     }
 
     /**
+     * Sets the order line list.
+     *
      * @param orderLineList
      *            the orderLineList to set
      */
     public void setOrderLineList(List<OrderLine> orderLineList){
         this.orderLineList = orderLineList;
+    }
+
+    /**
+     * 获得 物流状态.
+     *
+     * @return the logisticsStatus
+     */
+    public Integer getLogisticsStatus(){
+        return logisticsStatus;
+    }
+
+    /**
+     * 设置 物流状态.
+     *
+     * @param logisticsStatus
+     *            the logisticsStatus to set
+     */
+    public void setLogisticsStatus(Integer logisticsStatus){
+        this.logisticsStatus = logisticsStatus;
     }
 
 }

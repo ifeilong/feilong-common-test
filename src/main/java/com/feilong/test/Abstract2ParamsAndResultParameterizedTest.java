@@ -18,16 +18,18 @@ package com.feilong.test;
 import org.junit.runners.Parameterized.Parameter;
 
 /**
- * 1个参数 和1个返回结果的 ParameterizedTest.
+ * 两个参数 和一个返回结果的 ParameterizedTest.
  *
  * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
  * @param <I>
+ *            the generic type
+ * @param <T>
  *            the generic type
  * @param <E>
  *            the element type
  * @since 1.8.5
  */
-public abstract class AbstractOneParamAndOneResultParameterizedTest<I, E> extends AbstractParameterizedTest{
+public abstract class Abstract2ParamsAndResultParameterizedTest<I, T, E> extends AbstractParameterizedTest{
 
     //必须是 public 访问修饰符
 
@@ -35,8 +37,14 @@ public abstract class AbstractOneParamAndOneResultParameterizedTest<I, E> extend
     @Parameter(value = 0)
     public I input1;
 
-    /** 期望值. */
+    /** 第二个参数. */
     @Parameter(value = 1)
+    public T input2;
+
+    //---------------------------------------------------------------
+
+    /** 期望值. */
+    @Parameter(value = 2)
     public E expectedValue;
 
 }

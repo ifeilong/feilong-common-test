@@ -26,6 +26,8 @@ public class UserInfo{
     /** The age. */
     private Integer age;
 
+    //---------------------------------------------------------------
+
     public UserInfo(){
         super();
     }
@@ -37,6 +39,8 @@ public class UserInfo{
         super();
         this.age = age;
     }
+
+    //---------------------------------------------------------------
 
     /**
      * 获得 age.

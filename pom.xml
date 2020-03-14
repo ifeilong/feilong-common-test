@@ -20,7 +20,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<version.commons-lang3>3.8.1</version.commons-lang3>
-		<version.junit>4.12</version.junit>
+		<version.junit>4.13</version.junit>
 
 		<v.maven-compiler-plugin>3.8.1</v.maven-compiler-plugin>
 		<v.maven-surefire-plugin>2.22.2</v.maven-surefire-plugin>
@@ -33,7 +33,7 @@
 
 		<!-- http://maven.apache.org/plugins/maven-source-plugin/download.cgi -->
 		<!-- https://issues.apache.org/jira/projects/MSOURCES?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page&status=released-unreleased -->
-		<v.maven-source-plugin>3.2.0</v.maven-source-plugin>
+		<v.maven-source-plugin>3.2.1</v.maven-source-plugin>
 
 		<!-- **********************begin site-maven-plugin config******************************************* -->
 		<site-maven-plugin.repositoryName>feilong-platform</site-maven-plugin.repositoryName>

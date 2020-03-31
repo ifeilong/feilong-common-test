@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.feilong.test</groupId>
 	<artifactId>feilong-common-test</artifactId>
-	<version>2.0.0</version>
+	<version>3.0.0</version>
 
 	<name>feilong-common-test</name>
 	<description>feilong-common-test</description>
@@ -21,6 +22,8 @@
 
 		<version.commons-lang3>3.8.1</version.commons-lang3>
 		<version.junit>4.13</version.junit>
+		<!-- http://www.slf4j.org/news.html -->
+		<version.slf4j>1.7.30</version.slf4j>
 
 		<v.maven-compiler-plugin>3.8.1</v.maven-compiler-plugin>
 		<v.maven-surefire-plugin>2.22.2</v.maven-surefire-plugin>
@@ -74,6 +77,13 @@
 			<artifactId>junit</artifactId>
 			<version>${version.junit}</version>
 			<optional>true</optional>
+		</dependency>
+
+		<!--******** slf4j******** -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${version.slf4j}</version>
 		</dependency>
 	</dependencies>
 

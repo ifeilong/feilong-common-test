@@ -15,16 +15,11 @@
  */
 package com.feilong.test;
 
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-/**
- * The Class AbstractParameterizedTest.
- *
- * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @since 1.8.3
- */
-@RunWith(Parameterized.class)
-public abstract class AbstractParameterizedTest extends AbstractTest{
+public abstract class AbstractTest{
 
+    /** The Constant log. */
+    protected static final Logger LOGGER = LoggerFactory.getLogger(AbstractTest.class);
 }

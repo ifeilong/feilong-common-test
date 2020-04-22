@@ -4,16 +4,13 @@
 
 	<groupId>com.feilong.test</groupId>
 	<artifactId>feilong-common-test</artifactId>
-	<version>3.0.0</version>
-
-	<name>feilong-common-test</name>
-	<description>feilong-common-test</description>
+	<version>4.0.0</version>
 
 	<!-- 软件配置管理SCM (Software Configuration Management), 如cvs ,svn ,git -->
 	<scm>
-		<url>https://github.com/venusdrogon/feilong-platform</url>
-		<connection>scm:git:https://github.com/venusdrogon/feilong-platform</connection>
-		<developerConnection>scm:git:git@github.com:venusdrogon/feilong-platform.git</developerConnection>
+		<url>https://github.com/ifeilong/feilong-common-test</url>
+		<connection>scm:git:https://github.com/ifeilong/feilong-common-test</connection>
+		<developerConnection>scm:git:git@github.com:ifeilong/feilong-common-test.git</developerConnection>
 	</scm>
 
 	<properties>
@@ -39,8 +36,8 @@
 		<v.maven-source-plugin>3.2.1</v.maven-source-plugin>
 
 		<!-- **********************begin site-maven-plugin config******************************************* -->
-		<site-maven-plugin.repositoryName>feilong-platform</site-maven-plugin.repositoryName>
-		<site-maven-plugin.repositoryOwner>venusdrogon</site-maven-plugin.repositoryOwner>
+		<site-maven-plugin.repositoryName>${project.artifactId}}</site-maven-plugin.repositoryName>
+		<site-maven-plugin.repositoryOwner>ifeilong</site-maven-plugin.repositoryOwner>
 		<site-maven-plugin.branch>refs/heads/repository</site-maven-plugin.branch>
 		<!-- git commit message -->
 		<site-maven-plugin.message>:rocket: deploy ${project.name} ${project.version}</site-maven-plugin.message>

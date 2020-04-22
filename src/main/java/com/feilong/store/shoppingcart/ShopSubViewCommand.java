@@ -39,11 +39,11 @@ public class ShopSubViewCommand implements Serializable{
     private String            name;
 
     /**
-     * 店铺的code,see {@link com.baozun.nebula.model.auth.Organization#getCode()},冗余,通常在购物车页面不会用这个值.
+     * 店铺的code, 冗余,通常在购物车页面不会用这个值.
      */
     private String            code;
 
-    /** 状态,see {@link com.baozun.nebula.model.auth.Organization#getLifecycle()}. */
+    /** 状态, . */
     private Integer           lifecycle;
 
     //---------------------------------------------------------------

@@ -82,8 +82,6 @@ public class ShoppingCartLineSubViewCommand implements Serializable{
     /**
      * 库存数量.
      * 
-     * @see com.baozun.nebula.sdk.command.SkuCommand#getAvailableQty()
-     * @since 5.3.1.8
      */
     private Integer                                      stock;
 
@@ -97,18 +95,12 @@ public class ShoppingCartLineSubViewCommand implements Serializable{
     /**
      * 是否选中,主要用来渲染view里面的checkbox checked状态.
      * 
-     * 参见 {@link com.baozun.nebula.model.shoppingcart.ShoppingCartLine#getSettlementState()} 结算状态,表结构里面是使用int来标识的,"0未选中结算,1选中结算"
-     * ,其实就两个状态,在前端view里面 重新设计为boolean,true为选中,false为不选中
-     * 
-     * @see com.baozun.nebula.model.shoppingcart.ShoppingCartLine#getSettlementState()
-     * @see com.baozun.nebula.sdk.command.shoppingcart.ShoppingCartLineCommand#getSettlementState()
      */
     private boolean                                      checked;
 
     /**
      * 是否是赠品.
      * 
-     * 参见 {@link com.baozun.nebula.model.shoppingcart.ShoppingCartLine#isGift()}
      */
     private boolean                                      isGift;
 

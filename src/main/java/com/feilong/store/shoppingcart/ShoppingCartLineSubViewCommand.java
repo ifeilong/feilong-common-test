@@ -29,8 +29,6 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  * 购物车里面的每行明细.
  *
  * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @version 5.3.1 2016年4月25日 上午11:13:26
- * @since 5.3.1
  */
 public class ShoppingCartLineSubViewCommand implements Serializable{
 

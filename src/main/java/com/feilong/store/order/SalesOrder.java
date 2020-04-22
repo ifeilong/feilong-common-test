@@ -22,13 +22,6 @@ import java.util.List;
 
 import com.feilong.store.member.Member;
 
-/**
- * The Class SalesOrder.
- * 
- * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @version 1.0.7 2014年6月24日 上午11:28:28
- * @since 1.0.7
- */
 public class SalesOrder implements Serializable{
 
     /** The Constant serialVersionUID. */

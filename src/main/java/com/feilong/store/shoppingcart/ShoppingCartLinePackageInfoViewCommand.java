@@ -21,8 +21,6 @@ import java.math.BigDecimal;
 /**
  * 包装信息.
  *
- * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @since 5.3.2.13
  */
 public class ShoppingCartLinePackageInfoViewCommand implements Serializable{
 

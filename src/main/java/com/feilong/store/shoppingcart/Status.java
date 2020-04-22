@@ -19,8 +19,6 @@ package com.feilong.store.shoppingcart;
 /**
  * 购物车行状态.
  * 
- * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @since 5.3.1.6
  */
 public enum Status{
 

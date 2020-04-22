@@ -21,13 +21,6 @@ import java.util.Date;
 
 import com.feilong.store.member.Member;
 
-/**
- * The Class SalesOrderDto.
- * 
- * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
- * @version 1.0.7 2014年6月24日 上午11:28:42
- * @since 1.0.7
- */
 public class SalesOrderDto implements Serializable{
 
     /** The Constant serialVersionUID. */

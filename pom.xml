@@ -6,6 +6,11 @@
 	<artifactId>feilong-common-test</artifactId>
 	<version>4.0.0</version>
 
+	<name>feilong-common-test</name>
+	<description>some common test entity and test abstract class</description>
+
+	<url>https://github.com/ifeilong/feilong-common-test</url>
+
 	<!-- 软件配置管理SCM (Software Configuration Management), 如cvs ,svn ,git -->
 	<scm>
 		<url>https://github.com/ifeilong/feilong-common-test</url>
@@ -48,16 +53,6 @@
 		<!-- **********************end site-maven-plugin config******************************************* -->
 	</properties>
 
-
-	<!-- 项目发布管理 -->
-	<distributionManagement>
-		<!-- <url>file://${user.home}/feilong/repository</url> -->
-		<repository>
-			<id>internal.repo</id>
-			<name>Temporary Staging Repository</name>
-			<url>file://${project.build.directory}/mvn-repo</url>
-		</repository>
-	</distributionManagement>
 
 	<dependencies>
 		<!-- commons-lang3 -->
@@ -130,57 +125,69 @@
 				</executions>
 			</plugin>
 
-			<!-- maven-deploy-plugin插件 -->
+			<!-- Gpg Signature -->
 			<plugin>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<version>${v.maven-deploy-plugin}</version>
-				<configuration>
-					<!-- <skip>true</skip> -->
-					<!-- Format: id::layout::url -->
-					<altReleaseDeploymentRepository>
-						sonatype-releases::default::https://oss.sonatype.org/content/repositories/Releases
-						<!-- sonatype-releases::default::https://oss.sonatype.org/service/local/staging/deploy/maven2 -->
-					</altReleaseDeploymentRepository>
-					<altSnapshotDeploymentRepository>sonatype-snapshots::default::https://oss.sonatype.org/content/repositories/snapshots</altSnapshotDeploymentRepository>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>com.github.github</groupId>
-				<artifactId>site-maven-plugin</artifactId>
-				<version>${v.site-maven-plugin}</version>
-				<configuration>
-					<!-- git commit message -->
-					<message>${site-maven-plugin.message}</message>
-					<!-- disable webpage processing -->
-					<noJekyll>true</noJekyll>
-
-					<merge>true</merge>
-
-					<!-- remote branch name -->
-					<branch>${site-maven-plugin.branch}</branch>
-
-					<!-- github repo name -->
-					<repositoryName>${site-maven-plugin.repositoryName}</repositoryName>
-					<!-- github username -->
-					<repositoryOwner>${site-maven-plugin.repositoryOwner}</repositoryOwner>
-
-					<!-- matches distribution management repository url above -->
-					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
-					<includes>
-						<include>**/*</include>
-					</includes>
-				</configuration>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.6</version>
 				<executions>
-					<!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
 					<execution>
+						<id>oss</id>
+						<phase>verify</phase>
 						<goals>
-							<goal>site</goal>
+							<goal>sign</goal>
 						</goals>
-						<phase>deploy</phase>
 					</execution>
 				</executions>
 			</plugin>
+
 		</plugins>
+
 	</build>
+
+	<!-- 项目提交者信息 -->
+	<developers>
+		<developer>
+			<id>feilong</id>
+			<name>金鑫</name>
+			<url>https://github.com/venusdrogon</url>
+			<organization>feilong</organization>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>8</timezone>
+		</developer>
+	</developers>
+
+	<!-- 指定这个项目的组织机构信息 -->
+	<organization>
+		<name>feiLong</name>
+		<url>https://github.com/ifeilong</url>
+	</organization>
+
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+
+	<!-- 项目发布管理 -->
+	<distributionManagement>
+		<repository>
+			<id>sonatype-releases</id>
+			<name>sonatype Staging Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>sonatype-snapshots</id>
+			<name>sonatype snapshots Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

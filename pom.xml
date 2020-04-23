@@ -24,6 +24,7 @@
 
 		<v.maven-compiler-plugin>3.8.1</v.maven-compiler-plugin>
 		<v.maven-surefire-plugin>2.22.2</v.maven-surefire-plugin>
+		<v.maven-deploy-plugin>2.8.2</v.maven-deploy-plugin>
 
 		<maven-compiler-plugin.source>1.7</maven-compiler-plugin.source>
 		<maven-compiler-plugin.target>1.7</maven-compiler-plugin.target>
@@ -127,6 +128,21 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+
+			<!-- maven-deploy-plugin插件 -->
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>${v.maven-deploy-plugin}</version>
+				<configuration>
+					<!-- <skip>true</skip> -->
+					<!-- Format: id::layout::url -->
+					<altReleaseDeploymentRepository>
+						sonatype-releases::default::https://oss.sonatype.org/content/repositories/Releases
+						<!-- sonatype-releases::default::https://oss.sonatype.org/service/local/staging/deploy/maven2 -->
+					</altReleaseDeploymentRepository>
+					<altSnapshotDeploymentRepository>sonatype-snapshots::default::https://oss.sonatype.org/content/repositories/snapshots</altSnapshotDeploymentRepository>
+				</configuration>
 			</plugin>
 
 			<plugin>

@@ -141,6 +141,21 @@
 				</executions>
 			</plugin>
 
+			<!-- Javadoc -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.1.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 
 	</build>
@@ -179,13 +194,13 @@
 	<!-- 项目发布管理 -->
 	<distributionManagement>
 		<repository>
-			<id>sonatype-releases</id>
+			<id>oss</id>
 			<name>sonatype Staging Repository</name>
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 
 		<snapshotRepository>
-			<id>sonatype-snapshots</id>
+			<id>oss</id>
 			<name>sonatype snapshots Repository</name>
 			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 		</snapshotRepository>

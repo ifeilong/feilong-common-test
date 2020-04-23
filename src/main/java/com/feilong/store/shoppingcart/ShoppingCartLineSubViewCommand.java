@@ -36,7 +36,7 @@ public class ShoppingCartLineSubViewCommand implements Serializable{
     private static final long                            serialVersionUID = -7646174960209578056L;
 
     /**
-     * 购物车行的唯一标识,如果是会员购物车,那么此处的id={@link ShoppingCartLine#id},如果是游客的购物车,那么自己算出id,以便对这个id进行删除/修改.
+     * 购物车行的唯一标识,如果是会员购物车, 如果是游客的购物车,那么自己算出id,以便对这个id进行删除/修改.
      */
     private Long                                         id;
 
@@ -71,7 +71,7 @@ public class ShoppingCartLineSubViewCommand implements Serializable{
     /** 买的哪个sku. */
     private Long                                         skuId;
 
-    /** 外部编码 {@link Sku#outid},是扣减库存以及和后端对接数据的核心参数. */
+    /** 外部编码 是扣减库存以及和后端对接数据的核心参数. */
     private String                                       extentionCode;
 
     /** 数量几个. */
@@ -170,7 +170,7 @@ public class ShoppingCartLineSubViewCommand implements Serializable{
     }
 
     /**
-     * 获得 购物车行的唯一标识,如果是会员购物车,那么此处的id={@link ShoppingCartLine#id},如果是游客的购物车,那么自己算出id,以便对这个id进行删除/修改.
+     * 获得 购物车行的唯一标识,如果是会员购物车,那么此处的 如果是游客的购物车,那么自己算出id,以便对这个id进行删除/修改.
      *
      * @return the id
      */
@@ -179,7 +179,7 @@ public class ShoppingCartLineSubViewCommand implements Serializable{
     }
 
     /**
-     * 设置 购物车行的唯一标识,如果是会员购物车,那么此处的id={@link ShoppingCartLine#id},如果是游客的购物车,那么自己算出id,以便对这个id进行删除/修改.
+     * 设置 购物车行的唯一标识,如果是会员购物车,那么此处的 如果是游客的购物车,那么自己算出id,以便对这个id进行删除/修改.
      *
      * @param id
      *            the id to set
@@ -284,7 +284,7 @@ public class ShoppingCartLineSubViewCommand implements Serializable{
     }
 
     /**
-     * 获得 外部编码 {@link Sku#outid},是扣减库存以及和后端对接数据的核心参数.
+     * 获得 外部编码 是扣减库存以及和后端对接数据的核心参数.
      *
      * @return the extentionCode
      */
@@ -293,7 +293,7 @@ public class ShoppingCartLineSubViewCommand implements Serializable{
     }
 
     /**
-     * 设置 外部编码 {@link Sku#outid},是扣减库存以及和后端对接数据的核心参数.
+     * 设置 外部编码 是扣减库存以及和后端对接数据的核心参数.
      *
      * @param extentionCode
      *            the extentionCode to set

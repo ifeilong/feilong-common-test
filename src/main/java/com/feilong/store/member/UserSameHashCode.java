@@ -15,9 +15,6 @@
  */
 package com.feilong.store.member;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
 /**
  * for 极端测试
  * 
@@ -57,20 +54,15 @@ public class UserSameHashCode{
     /*
      * (non-Javadoc)
      * 
-     * @see java.lang.Object#toString()
-     */
-    @Override
-    public String toString(){
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.NO_CLASS_NAME_STYLE);
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
      * @see java.lang.Object#hashCode()
      */
     @Override
     public int hashCode(){
         return 1;
+    }
+
+    @Override
+    public String toString(){
+        return "UserSameHashCode [id=" + id + ", name=" + name + "]";
     }
 }

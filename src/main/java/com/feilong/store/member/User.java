@@ -17,14 +17,10 @@ package com.feilong.store.member;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * The Class User.
@@ -309,36 +305,97 @@ public class User implements Comparable<User>{
         this.attrMap = attrMap;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see java.lang.Object#toString()
-     */
     @Override
     public String toString(){
-        //不要使用 MULTI_LINE_STYLE
-        //see https://github.com/venusdrogon/feilong-core/issues/204
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+        return "User [id=" + id + ", name=" + name + ", age=" + age + ", ageInt=" + ageInt + ", password=" + password + ", loves="
+                        + Arrays.toString(loves) + ", date=" + date + ", money=" + money + ", attrMap=" + attrMap + ", nickNames="
+                        + Arrays.toString(nickNames) + ", userInfo=" + userInfo + ", userAddresses=" + Arrays.toString(userAddresses)
+                        + ", userAddresseList=" + userAddresseList + "]";
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see java.lang.Object#hashCode()
-     */
     @Override
     public int hashCode(){
-        return HashCodeBuilder.reflectionHashCode(this);
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((age == null) ? 0 : age.hashCode());
+        result = prime * result + ageInt;
+        result = prime * result + ((attrMap == null) ? 0 : attrMap.hashCode());
+        result = prime * result + ((date == null) ? 0 : date.hashCode());
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        result = prime * result + Arrays.hashCode(loves);
+        result = prime * result + ((money == null) ? 0 : money.hashCode());
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + Arrays.hashCode(nickNames);
+        result = prime * result + ((password == null) ? 0 : password.hashCode());
+        result = prime * result + ((userAddresseList == null) ? 0 : userAddresseList.hashCode());
+        result = prime * result + Arrays.hashCode(userAddresses);
+        result = prime * result + ((userInfo == null) ? 0 : userInfo.hashCode());
+        return result;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see java.lang.Object#equals(java.lang.Object)
-     */
     @Override
     public boolean equals(Object obj){
-        return EqualsBuilder.reflectionEquals(this, obj, "id");
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        User other = (User) obj;
+        if (age == null){
+            if (other.age != null)
+                return false;
+        }else if (!age.equals(other.age))
+            return false;
+        if (ageInt != other.ageInt)
+            return false;
+        if (attrMap == null){
+            if (other.attrMap != null)
+                return false;
+        }else if (!attrMap.equals(other.attrMap))
+            return false;
+        if (date == null){
+            if (other.date != null)
+                return false;
+        }else if (!date.equals(other.date))
+            return false;
+        if (id == null){
+            if (other.id != null)
+                return false;
+        }else if (!id.equals(other.id))
+            return false;
+        if (!Arrays.equals(loves, other.loves))
+            return false;
+        if (money == null){
+            if (other.money != null)
+                return false;
+        }else if (!money.equals(other.money))
+            return false;
+        if (name == null){
+            if (other.name != null)
+                return false;
+        }else if (!name.equals(other.name))
+            return false;
+        if (!Arrays.equals(nickNames, other.nickNames))
+            return false;
+        if (password == null){
+            if (other.password != null)
+                return false;
+        }else if (!password.equals(other.password))
+            return false;
+        if (userAddresseList == null){
+            if (other.userAddresseList != null)
+                return false;
+        }else if (!userAddresseList.equals(other.userAddresseList))
+            return false;
+        if (!Arrays.equals(userAddresses, other.userAddresses))
+            return false;
+        if (userInfo == null){
+            if (other.userInfo != null)
+                return false;
+        }else if (!userInfo.equals(other.userInfo))
+            return false;
+        return true;
     }
 
     /**

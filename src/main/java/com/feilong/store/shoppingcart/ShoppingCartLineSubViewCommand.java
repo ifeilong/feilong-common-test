@@ -22,9 +22,6 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
 /**
  * 购物车里面的每行明细.
  *
@@ -483,14 +480,13 @@ public class ShoppingCartLineSubViewCommand implements Serializable{
         this.stock = stock;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see java.lang.Object#toString()
-     */
     @Override
     public String toString(){
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
+        return "ShoppingCartLineSubViewCommand [id=" + id + ", status=" + status + ", addTime=" + addTime + ", group=" + group + ", itemId="
+                        + itemId + ", itemCode=" + itemCode + ", itemName=" + itemName + ", skuId=" + skuId + ", extentionCode="
+                        + extentionCode + ", quantity=" + quantity + ", stock=" + stock + ", itemPic=" + itemPic + ", checked=" + checked
+                        + ", isGift=" + isGift + ", salePrice=" + salePrice + ", listPrice=" + listPrice + ", subTotalAmt=" + subTotalAmt
+                        + ", shoppingCartLinePackageInfoViewCommandList=" + shoppingCartLinePackageInfoViewCommandList + "]";
     }
 
     /**

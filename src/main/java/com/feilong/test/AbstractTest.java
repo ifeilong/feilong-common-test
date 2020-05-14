@@ -21,5 +21,5 @@ import org.slf4j.LoggerFactory;
 public abstract class AbstractTest{
 
     /** The Constant log. */
-    protected static final Logger LOGGER = LoggerFactory.getLogger(AbstractTest.class);
+    protected Logger LOGGER = LoggerFactory.getLogger(getClass());
 }

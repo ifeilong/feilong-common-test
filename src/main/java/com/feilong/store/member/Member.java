@@ -48,14 +48,17 @@ public class Member implements Serializable{
 
     //---------------------------------------------------------------
     /**
-     * 
+     * Instantiates a new member.
      */
     public Member(){
         super();
     }
 
     /**
+     * Instantiates a new member.
+     *
      * @param id
+     *            the id
      */
     public Member(Long id){
         super();

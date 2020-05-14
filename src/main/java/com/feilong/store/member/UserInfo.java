@@ -28,12 +28,18 @@ public class UserInfo{
 
     //---------------------------------------------------------------
 
+    /**
+     * Instantiates a new user info.
+     */
     public UserInfo(){
         super();
     }
 
     /**
+     * Instantiates a new user info.
+     *
      * @param age
+     *            the age
      */
     public UserInfo(Integer age){
         super();

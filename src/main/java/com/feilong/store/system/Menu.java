@@ -57,7 +57,10 @@ public class Menu{
     private List<Menu> children;
 
     /**
+     * Instantiates a new menu.
+     *
      * @param id
+     *            the id
      */
     public Menu(Long id){
         super();

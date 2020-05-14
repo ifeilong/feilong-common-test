@@ -77,8 +77,12 @@ public class User implements Comparable<User>{
     }
 
     /**
+     * Instantiates a new user.
+     *
      * @param id
+     *            the id
      * @param name
+     *            the name
      */
     public User(Long id, String name){
         super();
@@ -305,6 +309,11 @@ public class User implements Comparable<User>{
         this.attrMap = attrMap;
     }
 
+    /**
+     * To string.
+     *
+     * @return the string
+     */
     @Override
     public String toString(){
         return "User [id=" + id + ", name=" + name + ", age=" + age + ", ageInt=" + ageInt + ", password=" + password + ", loves="
@@ -313,6 +322,11 @@ public class User implements Comparable<User>{
                         + ", userAddresseList=" + userAddresseList + "]";
     }
 
+    /**
+     * Hash code.
+     *
+     * @return the int
+     */
     @Override
     public int hashCode(){
         final int prime = 31;
@@ -333,6 +347,13 @@ public class User implements Comparable<User>{
         return result;
     }
 
+    /**
+     * Equals.
+     *
+     * @param obj
+     *            the obj
+     * @return true, if successful
+     */
     @Override
     public boolean equals(Object obj){
         if (this == obj)
@@ -417,6 +438,13 @@ public class User implements Comparable<User>{
         this.age = age;
     }
 
+    /**
+     * Compare to.
+     *
+     * @param o
+     *            the o
+     * @return the int
+     */
     /*
      * (non-Javadoc)
      * 

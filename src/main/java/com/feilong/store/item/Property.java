@@ -16,22 +16,31 @@
 package com.feilong.store.item;
 
 /**
- * 
+ * The Class Property.
+ *
  * @author <a href="http://feitianbenyue.iteye.com/">feilong</a>
  * @since 1.7.3
  */
 public class Property{
 
+    /** The id. */
     private Long   id;
 
+    /** The name. */
     private String name;
 
+    /** The value. */
     private String value;
 
     /**
+     * Instantiates a new property.
+     *
      * @param id
+     *            the id
      * @param name
+     *            the name
      * @param value
+     *            the value
      */
     public Property(Long id, String name, String value){
         super();
@@ -41,6 +50,8 @@ public class Property{
     }
 
     /**
+     * Gets the id.
+     *
      * @return the id
      */
     public Long getId(){
@@ -48,6 +59,8 @@ public class Property{
     }
 
     /**
+     * Sets the id.
+     *
      * @param id
      *            the id to set
      */
@@ -56,6 +69,8 @@ public class Property{
     }
 
     /**
+     * Gets the name.
+     *
      * @return the name
      */
     public String getName(){
@@ -63,6 +78,8 @@ public class Property{
     }
 
     /**
+     * Sets the name.
+     *
      * @param name
      *            the name to set
      */
@@ -71,6 +88,8 @@ public class Property{
     }
 
     /**
+     * Gets the value.
+     *
      * @return the value
      */
     public String getValue(){
@@ -78,6 +97,8 @@ public class Property{
     }
 
     /**
+     * Sets the value.
+     *
      * @param value
      *            the value to set
      */

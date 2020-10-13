@@ -22,7 +22,7 @@
 		<!-- 让整个项目统一字符集编码 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<version.junit>4.13</version.junit>
+		<version.junit>4.13.1</version.junit>
 		<!-- http://www.slf4j.org/news.html -->
 		<version.slf4j>1.7.30</version.slf4j>
 

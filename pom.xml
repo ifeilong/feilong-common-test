@@ -4,7 +4,7 @@
 
 	<groupId>com.github.ifeilong</groupId>
 	<artifactId>feilong-common-test</artifactId>
-	<version>4.1.0</version>
+	<version>4.1.1</version>
 
 	<name>feilong-common-test</name>
 	<description>some common test entity and test abstract class</description>
@@ -22,9 +22,9 @@
 		<!-- 让整个项目统一字符集编码 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<version.junit>4.13</version.junit>
+		<version.junit>4.13.2</version.junit>
 		<!-- http://www.slf4j.org/news.html -->
-		<version.slf4j>1.7.30</version.slf4j>
+		<version.slf4j>1.7.36</version.slf4j>
 
 		<v.maven-compiler-plugin>3.8.1</v.maven-compiler-plugin>
 		<v.maven-surefire-plugin>2.22.2</v.maven-surefire-plugin>
